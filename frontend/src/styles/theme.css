@@ -1,0 +1,104 @@
+/*
+  Design tokens for the Amex Meeting Catch-Up Assistant demo.
+
+  Direction: white-background, Fluent/Copilot-inspired workspace - chosen
+  deliberately because the brief targets a future M365 Copilot build and
+  the demo audience (tech + non-tech) needs to instantly recognize "this is
+  a Copilot-shaped tool", not a novel visual identity. Restraint is spent on
+  the pipeline strip / risk severity colors as the signature elements.
+*/
+
+:root {
+  /* Surfaces */
+  --surface-canvas: #ffffff;
+  --surface-subtle: #faf9f8;
+  --surface-card: #ffffff;
+  --surface-sunken: #f3f2f1;
+  --surface-hover: #f5f5f5;
+
+  /* Borders */
+  --border-default: #e1dfdd;
+  --border-strong: #c8c6c4;
+
+  /* Text */
+  --text-primary: #201f1e;
+  --text-secondary: #605e5c;
+  --text-tertiary: #8a8886;
+  --text-on-accent: #ffffff;
+
+  /* Brand / accent (Fluent blue family) */
+  --accent-primary: #0f6cbd;
+  --accent-primary-hover: #115ea3;
+  --accent-primary-tint: #e8f2fb;
+  --accent-secondary: #6b4fbb;
+
+  /* Semantic */
+  --success: #107c10;
+  --success-tint: #e6f4e6;
+  --warning: #c19c00;
+  --warning-tint: #fff4ce;
+  --danger: #c4314b;
+  --danger-tint: #fde7ea;
+  --info-tint: #eef6fc;
+
+  /* Pipeline step accent colors (match the uploaded reference diagram) */
+  --step-read-notes: #0f6cbd;
+  --step-decisions: #8764b8;
+  --step-actions: #ca5010;
+  --step-risks: #c4314b;
+  --step-priorities: #107c10;
+  --step-followup: #5c2e91;
+
+  /* Typography */
+  --font-body: "Segoe UI", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  /* Radius / elevation */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Layout */
+  --nav-width: 72px;
+  --chat-rail-width: 340px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--surface-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: var(--accent-primary);
+}
+
+::selection {
+  background: var(--accent-primary-tint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

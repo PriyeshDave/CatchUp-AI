@@ -1,0 +1,126 @@
+{
+  "meetings": [
+    {
+      "id": "mtg-standup-20260801",
+      "title": "Daily Standup",
+      "organizer": "siva.kumar",
+      "date": "2026-08-01",
+      "start_time": "09:30",
+      "end_time": "09:45",
+      "timezone": "Asia/Kolkata",
+      "platform": "Microsoft Teams",
+      "sensitivity_label": "Internal",
+      "keywords": [
+        "standup",
+        "daily",
+        "sync",
+        "priorities",
+        "blockers",
+        "incident",
+        "sentiment",
+        "grewe"
+      ],
+      "eligible_attendees": [
+        "priyesh.dave",
+        "arun.narayanan",
+        "avik.bhattacharjee",
+        "ravi.kumar",
+        "vibhanshu.patidar",
+        "lewis.white",
+        "siva.kumar"
+      ]
+    },
+    {
+      "id": "mtg-incidents-20260801",
+      "title": "Incident Data Management - Weekly Sync",
+      "organizer": "arun.narayanan",
+      "date": "2026-08-01",
+      "start_time": "11:00",
+      "end_time": "11:45",
+      "timezone": "Asia/Kolkata",
+      "platform": "Microsoft Teams",
+      "sensitivity_label": "Internal",
+      "keywords": [
+        "servicenow",
+        "incident",
+        "worknotes",
+        "jnai",
+        "categorization",
+        "enrichment",
+        "mrmg",
+        "elastic",
+        "nexthink",
+        "e2",
+        "e3",
+        "asset data"
+      ],
+      "eligible_attendees": [
+        "priyesh.dave",
+        "arun.narayanan",
+        "vibhanshu.patidar",
+        "lewis.white",
+        "siva.kumar"
+      ]
+    },
+    {
+      "id": "mtg-sentiment-20260801",
+      "title": "Sentiment Analytics - Weekly Sync",
+      "organizer": "lewis.white",
+      "date": "2026-08-01",
+      "start_time": "13:00",
+      "end_time": "13:45",
+      "timezone": "Asia/Kolkata",
+      "platform": "Microsoft Teams",
+      "sensitivity_label": "Internal",
+      "keywords": [
+        "sentiment",
+        "nlp",
+        "survey",
+        "chatgpt rollout",
+        "mrmg",
+        "tmrc",
+        "shap",
+        "clustering",
+        "governance",
+        "bu onboarding",
+        "ces",
+        "context form"
+      ],
+      "eligible_attendees": [
+        "priyesh.dave",
+        "arun.narayanan",
+        "vibhanshu.patidar",
+        "lewis.white",
+        "siva.kumar"
+      ]
+    },
+    {
+      "id": "mtg-grewe-20260801",
+      "title": "GREWE Analytics - Weekly Sync",
+      "organizer": "ravi.kumar",
+      "date": "2026-08-01",
+      "start_time": "15:00",
+      "end_time": "15:45",
+      "timezone": "Asia/Kolkata",
+      "platform": "Microsoft Teams",
+      "sensitivity_label": "Confidential",
+      "keywords": [
+        "grewe",
+        "grivy",
+        "colleague360",
+        "launchpad",
+        "floor planning",
+        "attendance",
+        "badge",
+        "access approval"
+      ],
+      "eligible_attendees": [
+        "ravi.kumar",
+        "arun.narayanan",
+        "vibhanshu.patidar",
+        "avik.bhattacharjee",
+        "siva.kumar"
+      ]
+    }
+  ]
+}

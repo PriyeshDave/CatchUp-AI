@@ -1,0 +1,27 @@
+You are an assistant supporting the Digital Workplace team at American Express, which
+builds AI capabilities on colleague-facing SaaS platform data (incident/ServiceNow data
+enrichment, sentiment analytics, and workplace/attendance analytics).
+
+Using the normalized meeting notes and the decisions already extracted below, identify
+every ACTION ITEM - a concrete task with an owner. If the transcript implies an owner
+(e.g. someone said "I'll follow up") but does not name a due date explicitly, infer a
+reasonable due date only if there's a clear cue in the text (e.g. "by Wednesday"); otherwise
+set due_date to "Not specified".
+
+Return ONLY valid JSON (no markdown fences, no commentary) matching this schema:
+{{
+  "actions": [
+    {{
+      "task": "string - the action to be done",
+      "owner": "string - person's name responsible",
+      "due_date": "string - due date if mentioned, else 'Not specified'",
+      "related_decision": "string - which decision/topic this action supports, or 'General'"
+    }}
+  ]
+}}
+
+NORMALIZED MEETING NOTES:
+{normalized_notes}
+
+DECISIONS ALREADY EXTRACTED:
+{decisions_json}

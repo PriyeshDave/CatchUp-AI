@@ -1,0 +1,192 @@
+{
+  "mtg-standup-20260801": {
+    "source": "Microsoft Teams",
+    "segments": [
+      {
+        "time": "09:30",
+        "speaker": "Siva Kumar",
+        "text": "Morning all, quick round robin. Heads up - Priyesh is on PTO today, so if anything needs his sign-off, flag it here and we'll loop him in when he's back Monday."
+      },
+      {
+        "time": "09:31",
+        "speaker": "Priyesh Dave",
+        "text": "(Absent - on PTO)"
+      },
+      {
+        "time": "09:32",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "On Incident Data Management, MRMG approval for production is still pending on my end. Once that clears we can plan the E3 rollout."
+      },
+      {
+        "time": "09:33",
+        "speaker": "Vibhanshu Patidar",
+        "text": "I finished loading the Nexthink data into Elastic, that's complete through the E2 environment. I'll pick up E3 once Arun's approval lands."
+      },
+      {
+        "time": "09:34",
+        "speaker": "Lewis White",
+        "text": "I pulled together the consolidated feedback from the ServiceNow service engineers on the work note formatting, I'll drop that doc in the channel today."
+      },
+      {
+        "time": "09:35",
+        "speaker": "Ravi Kumar",
+        "text": "On GREWE, I'm making progress on the Colleague 360 ingestion. Should have an update by this afternoon's sync."
+      },
+      {
+        "time": "09:36",
+        "speaker": "Avik Bhattacharjee",
+        "text": "I still need to review and approve the launch-pad access request Vibhanshu raised, I'll get to it before end of day."
+      },
+      {
+        "time": "09:37",
+        "speaker": "Siva Kumar",
+        "text": "Great, let's keep the two deep-dive syncs at 11 and 1 for incident and sentiment, and GREWE at 3. See everyone there."
+      }
+    ]
+  },
+  "mtg-incidents-20260801": {
+    "source": "Microsoft Teams",
+    "segments": [
+      {
+        "time": "11:00",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "Let's do the Incident Data Management sync. Since Priyesh is out today, I'll cover what's pending on his side too."
+      },
+      {
+        "time": "11:02",
+        "speaker": "Lewis White",
+        "text": "I finished capturing and drafting the consolidated feedback from the ServiceNow service engineers on the work note quality, that's ready to share with the team."
+      },
+      {
+        "time": "11:05",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "Good. Priyesh already went through that feedback before he left and made the corresponding changes, plus some formatting fixes so the enriched work notes render correctly inside ServiceNow."
+      },
+      {
+        "time": "11:08",
+        "speaker": "Vibhanshu Patidar",
+        "text": "On my side, I've loaded the Nexthink data into Elastic, that's complete through the E2 environment. E3 load is next but I'm blocked until the MRMG approval for production comes through."
+      },
+      {
+        "time": "11:12",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "I'm still working that MRMG approval. Once it clears, we can lock a date to plan the E3 rollout."
+      },
+      {
+        "time": "11:15",
+        "speaker": "Lewis White",
+        "text": "One more thing, we've got a blocker. The asset data we need to enrich the work notes isn't available in our Elastic index at all, it's just not populated there."
+      },
+      {
+        "time": "11:17",
+        "speaker": "Vibhanshu Patidar",
+        "text": "Confirmed, I checked, the asset fields are empty across the board. We'd need Data Engineering to backfill that before we can add it to the work notes."
+      },
+      {
+        "time": "11:20",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "Let's log that as a formal blocker and raise a request to Data Engineering. I'll make sure Priyesh is looped in Monday since it affects his formatting work too."
+      },
+      {
+        "time": "11:23",
+        "speaker": "Siva Kumar",
+        "text": "I'll add the asset-data blocker to the sprint board as a dependency ticket so it's tracked properly."
+      },
+      {
+        "time": "11:26",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "Agreed. Let's target getting MRMG sign-off this week so the E3 rollout doesn't slip further."
+      }
+    ]
+  },
+  "mtg-sentiment-20260801": {
+    "source": "Microsoft Teams",
+    "segments": [
+      {
+        "time": "13:00",
+        "speaker": "Lewis White",
+        "text": "Let's cover Sentiment Analytics. Quick recap, the framework is developed and we piloted it end-to-end on the ChatGPT rollout survey."
+      },
+      {
+        "time": "13:03",
+        "speaker": "Lewis White",
+        "text": "I'm building the deck to present the pilot results to leadership, aiming to have a draft ready by Wednesday."
+      },
+      {
+        "time": "13:06",
+        "speaker": "Vibhanshu Patidar",
+        "text": "I re-triggered the clustering run and redefined the clusters, the groupings are noticeably cleaner now compared to the first pass."
+      },
+      {
+        "time": "13:09",
+        "speaker": "Vibhanshu Patidar",
+        "text": "I'm also doing the MRMG documentation, but I'm blocked on the SHAP plots, Priyesh was going to generate those for me before he left. I'll ping him Monday."
+      },
+      {
+        "time": "13:13",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "I'm coordinating with MRMG and TMRC on governance approval so we can plan the E3 deployment for this framework too."
+      },
+      {
+        "time": "13:17",
+        "speaker": "Lewis White",
+        "text": "Priyesh was also building out the context form so any BU can self-onboard onto the survey framework instead of us configuring it manually each time."
+      },
+      {
+        "time": "13:20",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "That context form is actually one of the things TMRC asked about, they want to see it before they sign off, so let's prioritize getting that finished."
+      },
+      {
+        "time": "13:24",
+        "speaker": "Vibhanshu Patidar",
+        "text": "Once I have the SHAP plots I can close out the MRMG doc within a day or two."
+      },
+      {
+        "time": "13:28",
+        "speaker": "Lewis White",
+        "text": "Let's sync again once Priyesh is back Monday, we need his SHAP plots and a status on the context form before we can move governance forward."
+      }
+    ]
+  },
+  "mtg-grewe-20260801": {
+    "source": "Microsoft Teams",
+    "segments": [
+      {
+        "time": "15:00",
+        "speaker": "Ravi Kumar",
+        "text": "For GREWE, I'm continuing the ingestion of the Grivy data into the Colleague 360 database, attendance and floor-planning feeds are both flowing now."
+      },
+      {
+        "time": "15:04",
+        "speaker": "Vibhanshu Patidar",
+        "text": "I raised the launch-pad access request last week, still waiting on approval before I can start pulling from the source system directly."
+      },
+      {
+        "time": "15:07",
+        "speaker": "Avik Bhattacharjee",
+        "text": "That's on me, I'll review and approve it today, then submit it to the platform team for final provisioning."
+      },
+      {
+        "time": "15:11",
+        "speaker": "Ravi Kumar",
+        "text": "Once Vibhanshu has access, we can start testing the floor-planning and sitting-arrangement views against real data instead of the sample set."
+      },
+      {
+        "time": "15:15",
+        "speaker": "Avik Bhattacharjee",
+        "text": "Given this touches colleague attendance data, let's make sure we flag it to compliance for a quick privacy review before we go beyond the pilot."
+      },
+      {
+        "time": "15:19",
+        "speaker": "Arun Kumar Narayanan",
+        "text": "Agreed, I'll make sure that's logged as a formal action so it doesn't get missed."
+      },
+      {
+        "time": "15:23",
+        "speaker": "Ravi Kumar",
+        "text": "Sounds good, I'll have an updated ingestion status by next week's sync."
+      }
+    ]
+  }
+}
