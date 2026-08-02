@@ -70,37 +70,8 @@ orchestrator class with a fixed control flow, calling the OpenAI API directly. L
 tracing is available as an **optional** add-on (see below) purely for observability.
 
 ### Architecture diagram
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b57822b1-a5d0-4a57-bc28-8a11cc11bdf9" />
 
-```
-┌──────────────────────────┐        ┌───────────────────────────────────────────┐
-│        React UI          │  HTTP  │                 FastAPI                    │
-│ (white, Copilot-styled)  │◄──────►│                                             │
-│                          │        │  ┌───────────────┐   ┌───────────────────┐ │
-│  - Login (persona)       │  SSE   │  │ mock_auth.py   │   │ orchestration/    │ │
-│  - Copilot Home (search) │◄──────►│  │ (ACL + session)│   │   brain.py        │ │
-│  - Meeting Workspace     │        │  └───────┬───────┘   │   telemetry.py    │ │
-│    (pipeline strip,      │        │          │            │   state.py        │ │
-│     tabs, chat rail)     │        │          ▼            └─────────┬─────────┘ │
-│  - System Flow           │        │  ┌───────────────┐              │           │
-│    (security panel,      │        │  │  data/*.json   │              ▼           │
-│     LLM call ledger,     │        │  │ (meetings,     │   ┌───────────────────┐  │
-│     run summary)         │        │  │  transcripts,  │   │  services/         │  │
-│                          │        │  │  users)        │   │   openai_client.py │  │
-└──────────────────────────┘        │  └───────────────┘   └─────────┬─────────┘  │
-                                     │                                 │            │
-                                     └─────────────────────────────────┼────────────┘
-                                                                       ▼
-                                                              ┌─────────────────┐
-                                                              │   OpenAI API     │
-                                                              │ (gpt-4o-mini)    │
-                                                              └─────────────────┘
-                                                                       │
-                                                          (optional)   ▼
-                                                              ┌─────────────────┐
-                                                              │   LangSmith      │
-                                                              │ (trace/cost obs) │
-                                                              └─────────────────┘
-```
 
 ### Access control (the part that makes this feel real)
 
