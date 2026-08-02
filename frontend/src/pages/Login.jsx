@@ -58,13 +58,20 @@ export default function Login() {
             fontSize: 24,
           }}
         >
-          N
+          C
         </div>
-        <h1 style={{ fontSize: 22, fontWeight: 600, margin: "0 0 4px" }}>DW Workspace</h1>
-        <p style={{ color: "var(--text-secondary)", fontSize: 14, margin: "0 0 28px" }}>
-          Sign in to continue to Meeting Catch-Up Assistant. This demo simulates Microsoft 365
-          sign-in by letting you pick a persona.
+        <h1 style={{ fontSize: 24, fontWeight: 600, margin: "0 0 4px" }}> CatchUp AI </h1>
+        <h2 style={{ fontSize: 18, fontWeight: 600, margin: "0 0 4px" }}>Your AI-Powered Meeting Intelligence</h2>
+        <br />
+
+        <div style={{ color: "var(--text-secondary)", margin: "0 0 28px" }}>
+        <p style={{ fontSize: 14, margin: 0 }}>
+        Sign in to continue to <strong>CatchUp AI</strong>.
         </p>
+        <p style={{ fontSize: 14, margin: "4px 0 0" }}>
+            This demo simulates Microsoft 365 authentication by letting you choose a user persona.
+        </p>
+        </div>
 
         {error && (
           <div

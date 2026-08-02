@@ -88,7 +88,7 @@ export default function AppShell({ children }) {
             cursor: "pointer",
           }}
         >
-          N
+          C
         </div>
 
         <div style={{ flex: 1 }} />
