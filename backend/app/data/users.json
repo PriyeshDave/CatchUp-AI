@@ -4,49 +4,49 @@
       "id": "priyesh.dave",
       "name": "Priyesh Dave",
       "role": "Senior AI Engineer I",
-      "email": "priyesh.dave@amex.demo",
+      "email": "priyesh.dave@company.demo",
       "avatar_color": "#0F6CBD"
     },
     {
       "id": "arun.narayanan",
       "name": "Arun Kumar Narayanan",
       "role": "Sr Engineering Manager - AI",
-      "email": "arun.narayanan@amex.demo",
+      "email": "arun.narayanan@company.demo",
       "avatar_color": "#8764B8"
     },
     {
       "id": "avik.bhattacharjee",
       "name": "Avik Bhattacharjee",
       "role": "Director - Data Engineering",
-      "email": "avik.bhattacharjee@amex.demo",
+      "email": "avik.bhattacharjee@company.demo",
       "avatar_color": "#107C10"
     },
     {
       "id": "ravi.kumar",
       "name": "Ravi Kumar",
       "role": "Sr Engineering Manager - Data Engineering",
-      "email": "ravi.kumar@amex.demo",
+      "email": "ravi.kumar@company.demo",
       "avatar_color": "#D83B01"
     },
     {
       "id": "vibhanshu.patidar",
       "name": "Vibhanshu Patidar",
       "role": "AI Engineer II",
-      "email": "vibhanshu.patidar@amex.demo",
+      "email": "vibhanshu.patidar@company.demo",
       "avatar_color": "#C239B3"
     },
     {
       "id": "lewis.white",
       "name": "Lewis White",
       "role": "Product Manager",
-      "email": "lewis.white@amex.demo",
+      "email": "lewis.white@company.demo",
       "avatar_color": "#038387"
     },
     {
       "id": "siva.kumar",
       "name": "Siva Kumar",
       "role": "Scrum Master",
-      "email": "siva.kumar@amex.demo",
+      "email": "siva.kumar@company.demo",
       "avatar_color": "#FFB900"
     }
   ]

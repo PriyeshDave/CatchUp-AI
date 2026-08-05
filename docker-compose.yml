@@ -3,14 +3,14 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: Amex-catchup-backend
+    container_name: company-catchup-backend
     ports:
       - "${BACKEND_PORT:-8000}:8000"
     env_file:
       - .env
     restart: unless-stopped
     networks:
-      - Amex-net
+      - company-net
 
   frontend:
     build:
@@ -18,15 +18,15 @@ services:
       dockerfile: Dockerfile
       args:
         VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8000}
-    container_name: Amex-catchup-frontend
+    container_name: company-catchup-frontend
     ports:
       - "${FRONTEND_PORT:-3000}:3000"
     depends_on:
       - backend
     restart: unless-stopped
     networks:
-      - Amex-net
+      - company-net
 
 networks:
-  Amex-net:
+  company-net:
     driver: bridge

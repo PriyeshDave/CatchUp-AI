@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     # --- LangSmith (optional; falls back gracefully if unset) ---
     langchain_tracing_v2: bool = False
     langchain_api_key: str = ""
-    langchain_project: str = "Amex-catchup-demo"
+    langchain_project: str = "company-catchup-demo"
     langchain_endpoint: str = "https://api.smith.langchain.com"
 
     # --- App / server ---

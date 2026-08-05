@@ -37,7 +37,7 @@ from app.services.openai_client import call_llm
 settings = get_settings()
 
 app = FastAPI(
-    title="Amex Meeting Catch-Up Assistant (Demo)",
+    title="company Meeting Catch-Up Assistant (Demo)",
     description="Single-agent orchestrated meeting catch-up assistant, simulating an M365 Copilot experience.",
     version="1.0.0",
 )

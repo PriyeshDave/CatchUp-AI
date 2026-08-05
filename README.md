@@ -1,4 +1,4 @@
-# Amex Meeting Catch-Up Assistant (Demo)
+# company Meeting Catch-Up Assistant (Demo)
 
 A single-agent, tool-using orchestration demo that simulates an **M365 Copilot-style
 "Meeting Catch-Up Assistant"** for a fintech credit risk committee. Built with FastAPI +
@@ -28,7 +28,7 @@ colleagues. In a regulated financial services setting, this problem is sharper:
 
 ## 2. Use Case
 
-**Amex** (fictional digital lending fintech) runs a **Weekly Credit Risk & Underwriting
+**company** (fictional digital lending fintech) runs a **Weekly Credit Risk & Underwriting
 Committee** meeting on Microsoft Teams. The committee approves/rejects SME loans, reviews
 portfolio delinquency trends, and tracks regulatory compliance gaps.
 
@@ -112,7 +112,7 @@ estimates.
 ## 5. Repository Layout
 
 ```
-Amex-catchup-demo/
+company-catchup-demo/
 ├── backend/
 │   ├── app/
 │   │   ├── main.py                  # FastAPI routes
@@ -160,7 +160,7 @@ Amex-catchup-demo/
 
 ```bash
 git clone <this-repo>
-cd Amex-catchup-demo
+cd company-catchup-demo
 
 cp .env.example .env
 # edit .env and set OPENAI_API_KEY=sk-...
@@ -201,7 +201,7 @@ npm run dev                        # http://localhost:3000
    ```
    LANGCHAIN_TRACING_V2=true
    LANGCHAIN_API_KEY=ls__your-key
-   LANGCHAIN_PROJECT=Amex-catchup-demo
+   LANGCHAIN_PROJECT=company-catchup-demo
    ```
 3. Restart the backend. The System Flow page's LLM Call Ledger will now show "View trace ↗"
    links per step, and the Run Summary will link to the LangSmith project dashboard.
@@ -232,7 +232,7 @@ npm run dev                        # http://localhost:3000
 | `401 Missing session token` | Frontend didn't send `x-session-token` header | Confirm you're logged in; check `SessionContext` is storing the token |
 | CORS error in browser console | `CORS_ORIGINS` in `.env` doesn't include the frontend's origin | Add the exact origin (scheme+host+port) to `CORS_ORIGINS` |
 | OpenAI 401/403 errors | `OPENAI_API_KEY` missing/invalid | Check `.env`, restart backend container |
-| Pipeline stuck on "Running…" | SSE connection dropped or backend crashed | Check `docker logs Amex-catchup-backend`; browser dev tools Network tab for the `run-pipeline-stream` request |
+| Pipeline stuck on "Running…" | SSE connection dropped or backend crashed | Check `docker logs company-catchup-backend`; browser dev tools Network tab for the `run-pipeline-stream` request |
 | A step's output looks empty / has `_parse_warning` | Model didn't return valid JSON for that step | Check the step's prompt template — usually a wording tweak fixes it; the pipeline degrades gracefully rather than crashing |
 | System Flow page empty on first visit | No run has been executed yet for that meeting | Click "Run live", or run the pipeline first from the Assistant tab |
 

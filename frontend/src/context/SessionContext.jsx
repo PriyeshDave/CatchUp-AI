@@ -3,7 +3,7 @@ import { api } from "../api/client";
 
 const SessionContext = createContext(null);
 
-const STORAGE_KEY = "Amex_demo_session";
+const STORAGE_KEY = "company_demo_session";
 
 export function SessionProvider({ children }) {
   const [session, setSession] = useState(() => {
